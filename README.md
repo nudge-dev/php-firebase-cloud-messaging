@@ -8,23 +8,23 @@ See original Firebase docs: https://firebase.google.com/docs/
 #Setup
 Install via Composer:
 ```
-composer require sngrl/php-firebase-cloud-messaging
+composer require nudge-dev/php-firebase-cloud-messaging
 ```
 
 Or add this to your composer.json and run "composer update":
 
 ```
 "require": {
-    "sngrl/php-firebase-cloud-messaging": "dev-master"
+    "nudge-dev/php-firebase-cloud-messaging": "dev-master"
 }
 ```
 
 #Send message to Device
 ```
-use sngrl\PhpFirebaseCloudMessaging\Client;
-use sngrl\PhpFirebaseCloudMessaging\Message;
-use sngrl\PhpFirebaseCloudMessaging\Recipient\Device;
-use sngrl\PhpFirebaseCloudMessaging\Notification;
+use nudge-dev\PhpFirebaseCloudMessaging\Client;
+use nudge-dev\PhpFirebaseCloudMessaging\Message;
+use nudge-dev\PhpFirebaseCloudMessaging\Recipient\Device;
+use nudge-dev\PhpFirebaseCloudMessaging\Notification;
 
 $server_key = '_YOUR_SERVER_KEY_';
 $client = new Client();
@@ -62,10 +62,10 @@ $message
 #Send message to Topic
 
 ```
-use sngrl\PhpFirebaseCloudMessaging\Client;
-use sngrl\PhpFirebaseCloudMessaging\Message;
-use sngrl\PhpFirebaseCloudMessaging\Recipient\Topic;
-use sngrl\PhpFirebaseCloudMessaging\Notification;
+use nudge-dev\PhpFirebaseCloudMessaging\Client;
+use nudge-dev\PhpFirebaseCloudMessaging\Message;
+use nudge-dev\PhpFirebaseCloudMessaging\Recipient\Topic;
+use nudge-dev\PhpFirebaseCloudMessaging\Notification;
 
 $server_key = '_YOUR_SERVER_KEY_';
 $client = new Client();
@@ -107,7 +107,7 @@ $message
 
 #Subscribe user to the topic
 ```
-use sngrl\PhpFirebaseCloudMessaging\Client;
+use nudge-dev\PhpFirebaseCloudMessaging\Client;
 
 $server_key = '_YOUR_SERVER_KEY_';
 $client = new Client();
@@ -121,7 +121,7 @@ var_dump($response->getBody()->getContents());
 
 #Remove user subscription to the topic
 ```
-use sngrl\PhpFirebaseCloudMessaging\Client;
+use nudge-dev\PhpFirebaseCloudMessaging\Client;
 
 $server_key = '_YOUR_SERVER_KEY_';
 $client = new Client();

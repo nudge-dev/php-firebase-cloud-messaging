@@ -1,5 +1,5 @@
 <?php
-namespace sngrl\PhpFirebaseCloudMessaging\Recipient;
+namespace NudgeDev\PhpFirebaseCloudMessaging\Recipient;
 
 class Device extends Recipient
 {

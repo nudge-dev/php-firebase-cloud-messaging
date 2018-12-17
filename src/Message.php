@@ -1,9 +1,9 @@
 <?php
-namespace sngrl\PhpFirebaseCloudMessaging;
+namespace NudgeDev\PhpFirebaseCloudMessaging;
 
-use sngrl\PhpFirebaseCloudMessaging\Recipient\Recipient;
-use sngrl\PhpFirebaseCloudMessaging\Recipient\Topic;
-use sngrl\PhpFirebaseCloudMessaging\Recipient\Device;
+use NudgeDev\PhpFirebaseCloudMessaging\Recipient\Recipient;
+use NudgeDev\PhpFirebaseCloudMessaging\Recipient\Topic;
+use NudgeDev\PhpFirebaseCloudMessaging\Recipient\Device;
 
 /**
  * @author sngrl
@@ -35,7 +35,7 @@ class Message implements \JsonSerializable
      *
      * @param Recipient $recipient
      *
-     * @return \sngrl\PhpFirebaseCloudMessaging\Message
+     * @return \NudgeDev\PhpFirebaseCloudMessaging\Message
      */
     public function addRecipient(Recipient $recipient)
     {
