@@ -111,6 +111,7 @@ class Notification extends Message
         if ($this->content_available) {
             $jsonData['content_available'] = $this->content_available;
         }        
-        return $jsonData;
+        return (empty($jsonData) === false) ?
+			$jsonData : null;
     }
 }
